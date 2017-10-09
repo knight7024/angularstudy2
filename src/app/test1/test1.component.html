@@ -1,0 +1,18 @@
+<table class="table">
+<thead class="thead-default">
+    <tr>
+      <th>#</th>
+      <th>제목</th>
+      <th>작성자</th>
+      <th>작성일</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let data of datas; let i = index'>
+      <th scope="row">{{ i }}</th>
+      <td>{{ datas[i].title }}</td>
+      <td>{{ datas[i].writer }}</td>
+      <td>{{ datas[i].date }}</td>
+    </tr>
+</tbody>
+</table>
